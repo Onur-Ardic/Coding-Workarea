@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enoca İk Task</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header font-mono border-bottom">
+      <div class="container">
+        <div class="header-top d-flex justify-content-between py-3 px-3">
+          <h3>Onur Ardıç</h3>
+          <form class="input-area d-none d-md-block">
+            <select id="country">
+              <option value="tr" selected>TR</option>
+              <option value="us">US</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Search"
+              class="rounded-4 border-bottom p-2"
+              id="searchİnput"
+            />
+
+            <button
+              class="fa fa-search border-none p-1 bg-black-nero text-white rounded-circle"
+              ;
+              id="searchBtn"
+            ></button>
+          </form>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar-bottom"
+              aria-controls="navbar-bottom"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-bottom">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hakkımda</a>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" id="sports" idaria-disabled="true">
+                    Spor Haberleri
+                  </button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" id="health" idaria-disabled="true">
+                    Sağlık Haberleri
+                  </button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" id="technology" idaria-disabled="true">
+                    Teknoloji Haberleri
+                  </button>
+                </li>
+              </ul>
+              <form class="d-flex d-md-none" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="slider mt-3">
+      <div class="container">
+        <div id="newsSliderAutoplaying" class="carousel slide">
+          <div class="indicators carousel-indicators bg-black-nero">
+            <button
+              type="button"
+              data-bs-target="#newsSliderAutoplaying"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#newsSliderAutoplaying"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#newsSliderAutoplaying"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-content d-flex justify-content-center align-items-center gap-3">
+                <img src="https://lorempic.com/400" class="d-none w-50" alt="carousel-item" />
+
+                <div class="carousel-content mt-120">
+                  <h5 class="carouselTitle"></h5>
+                  <p class="author"></p>
+                  <span class="date"></span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-content d-flex justify-content-center align-items-center gap-3">
+                <img src="https://lorempic.com/400" class="d-none w-50" alt="carousel-item" />
+
+                <div class="carousel-content mt-120">
+                  <h5 class="carouselTitle"></h5>
+                  <p class="author"></p>
+                  <span class="date"></span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-content d-flex justify-content-center align-items-center gap-3">
+                <img src="https://lorempic.com/400" class="d-none w-50" alt="carousel-item" />
+
+                <div class="carousel-content mt-120">
+                  <h5 class="carouselTitle"></h5>
+                  <p class="author"></p>
+                  <span class="date"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#newsSliderAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon bg-black-nero" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#newsSliderAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon bg-black-nero" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsCard mt-140">
+      <div class="container">
+        <h3 class="text-center fs-1 mb-5" id="title">Haberler</h3>
+        <div class="newsCardWrapper d-flex justify-content-between gap-3 flex-wrap"></div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
