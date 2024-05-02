@@ -6,6 +6,8 @@ const newsTitle = document.getElementById('title')
 
 const apiKey = 'fb44ce1bd88740d4990d843834598291'
 
+
+
 async function SliderNews() {
   const response = await fetch(`https://newsapi.org/v2/top-headlines?country=tr&apiKey=${apiKey}`)
     .then((response) => response.json())
